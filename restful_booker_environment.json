@@ -1,0 +1,30 @@
+{
+  "id": "rb-portfolio-env-001",
+  "name": "Restful Booker — Portfolio Environment",
+  "values": [
+    {
+      "key": "baseUrl",
+      "value": "https://restful-booker.herokuapp.com",
+      "type": "default",
+      "enabled": true,
+      "description": "Base URL for the Restful Booker API. Change to http://localhost:3001 for local runs."
+    },
+    {
+      "key": "username",
+      "value": "admin",
+      "type": "secret",
+      "enabled": true,
+      "description": "Admin username. Store in secret type — never commit plaintext credentials."
+    },
+    {
+      "key": "password",
+      "value": "password123",
+      "type": "secret",
+      "enabled": true,
+      "description": "Admin password. In real projects, inject via CI secrets (e.g. GitHub Actions secrets)."
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2025-04-29T00:00:00.000Z",
+  "_postman_exported_using": "Postman/10.x"
+}
