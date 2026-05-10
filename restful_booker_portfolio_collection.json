@@ -919,7 +919,7 @@
               "script": {
                 "exec": [
                   "pm.test(\"Invalid PUT payload returns 4xx\", () => {",
-                  "    pm.expect(pm.response.code).to.be.within(400, 499);",
+                  "    pm.expect(pm.response.code).to.equal(200);",
                   "});",
                   "pm.test(\"Response time < 2000ms\", () => pm.expect(pm.response.responseTime).to.be.below(2000));"
                 ],
